@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  place_lat: MyString
+  place_lon: MyString
+
+two:
+  place_lat: MyString
+  place_lon: MyString

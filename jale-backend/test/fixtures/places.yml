@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  place_name: MyString
+  place_desc: MyString
+  place_cost: 1.5
+  place_email: MyString
+  place_score: 1
+  place_phone: MyString
+  place_website: MyString
+  place_address: MyString
+  place_time_open: 2024-01-10 20:00:40
+  place_time_close: 2024-01-10 20:00:40
+
+two:
+  place_name: MyString
+  place_desc: MyString
+  place_cost: 1.5
+  place_email: MyString
+  place_score: 1
+  place_phone: MyString
+  place_website: MyString
+  place_address: MyString
+  place_time_open: 2024-01-10 20:00:40
+  place_time_close: 2024-01-10 20:00:40

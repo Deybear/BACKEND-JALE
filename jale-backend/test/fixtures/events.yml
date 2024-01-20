@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  event_name: MyString
+  event_desc: MyString
+  event_cost: 1.5
+  event_email: MyString
+  event_photo: MyString
+  event_phone: MyString
+  event_website: MyString
+  event_address: MyString
+  event_date_start: 2024-01-10
+  event_time_start: 2024-01-10 20:00:52
+
+two:
+  event_name: MyString
+  event_desc: MyString
+  event_cost: 1.5
+  event_email: MyString
+  event_photo: MyString
+  event_phone: MyString
+  event_website: MyString
+  event_address: MyString
+  event_date_start: 2024-01-10
+  event_time_start: 2024-01-10 20:00:52
