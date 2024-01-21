@@ -36,7 +36,7 @@ class Auth::AuthenticationController < ApplicationController
                 # - - - </> [JSON] </> - - - >
                 render json: { user_id: @user.id, user_name: @user.user_name, user_lastname: @user.user_lastname,
                 user_email: @user.user_email, user_birthdate: @user.user_birthdate, token_code: @token,
-                token_date: @time.strftime("%m-%d-%Y %H:%M") }, status: :ok
+                token_date: @time.strftime("%m-%d-%Y %H:%M"), user_type: @user.user_type_id }, status: :ok
 
             end
 
