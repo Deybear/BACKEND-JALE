@@ -13,7 +13,7 @@
 # UserType.create!(user_type_desc: "default")
 
 # - - - </> [USER] </> - - - #
-# User.create!(user_name: "Deynor", user_lastname: "Rodriguez", user_email: "drodriguezr@fwdcostarica.com", password: "Deynor12345", user_birthdate: "1999-10-05")
+# User.create!(user_name: "Deynor", user_lastname: "Rodriguez", user_email: "drodriguezr@fwdcostarica.com", password: "Deynor12345", user_birthdate: "1999-10-05", user_type_id: 1)
 
 # - - - </> [CATEGORY] </> - - - #
 # Category.create!(category_desc: "+18")
@@ -67,7 +67,7 @@
 # place_address: "Province of Puntarenas, Monteverde", place_time_open: "7:00", place_time_close: "16:00")
 
 # - - - </> [PHOTO] </> - - - #
-# Photo.create!(photo_url: "photo-here", place_id: 1)
+# Photo.create!(photo_url: "https://shorturl.at/jJQS0", place_id: 1)
 
 # - - - </> [EVENT] </> - - - #
 # Event.create!(event_name: "IV Exhibition of Classic and Sports Cars", event_desc: "If you are a vehicle lover, whether in classic or sports versions, you cannot miss this activity. The Municipality of Esparza invites you to enjoy the IV Classic and Sports Car Exhibition, an event full of adrenaline, entertainment and engines",
@@ -122,5 +122,5 @@
 # PlaceCategory.create!(place_id: 5, category_id: 20)
 # PlaceCategory.create!(place_id: 5, category_id: 23)
 
-# - - - </> [REVIEW] </> - - - #
-# PlaceReview.create!(place_id: 1, review_id: 1, user_id: 1)
+# - - - </> [PHOTO] </> - - - #
+# PlaceLocation.create!(place_lat: "9.978107257386181", place_lon: "-84.82534270907112", place_id: 1)

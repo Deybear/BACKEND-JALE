@@ -4,7 +4,7 @@ class AddRefEventLocation < ActiveRecord::Migration[7.1]
   def change
 
     # - - - </> [REF] </> - - - #
-    add_reference(:event_locations, :user, foreign_key: true)
+    add_reference(:event_locations, :event, foreign_key: true)
   
   end
 

@@ -4,7 +4,7 @@ class AddRefPlaceLocation < ActiveRecord::Migration[7.1]
   def change
 
     # - - - </> [REF] </> - - - #
-    add_reference(:place_locations, :user, foreign_key: true)
+    add_reference(:place_locations, :place, foreign_key: true)
   
   end
   

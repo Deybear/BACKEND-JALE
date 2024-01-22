@@ -16,7 +16,16 @@ Rails.application.routes.draw do
     resources :events
 
     # - - - </> [ROUTE] </> - - - #
+    resources :photos
+
+    # - - - </> [ROUTE] </> - - - #
     resources :categories
+
+    # - - - </> [ROUTE] </> - - - #
+    resources :place_locations
+
+    # - - - </> [ROUTE] </> - - - #
+    resources :event_locations
     
   end
 

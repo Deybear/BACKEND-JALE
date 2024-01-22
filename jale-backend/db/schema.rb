@@ -31,8 +31,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_11_020337) do
     t.string "event_lon"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "user_id"
-    t.index ["user_id"], name: "index_event_locations_on_user_id"
+    t.integer "event_id"
+    t.index ["event_id"], name: "index_event_locations_on_event_id"
   end
 
   create_table "events", force: :cascade do |t|
@@ -72,8 +72,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_11_020337) do
     t.string "place_lon"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "user_id"
-    t.index ["user_id"], name: "index_place_locations_on_user_id"
+    t.integer "place_id"
+    t.index ["place_id"], name: "index_place_locations_on_place_id"
   end
 
   create_table "place_reviews", force: :cascade do |t|
@@ -149,11 +149,11 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_11_020337) do
 
   add_foreign_key "event_categories", "categories"
   add_foreign_key "event_categories", "events"
-  add_foreign_key "event_locations", "users"
+  add_foreign_key "event_locations", "events"
   add_foreign_key "photos", "places"
   add_foreign_key "place_categories", "categories"
   add_foreign_key "place_categories", "places"
-  add_foreign_key "place_locations", "users"
+  add_foreign_key "place_locations", "places"
   add_foreign_key "place_reviews", "places"
   add_foreign_key "place_reviews", "reviews"
   add_foreign_key "place_reviews", "users"
