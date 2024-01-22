@@ -41,4 +41,7 @@ class Place < ApplicationRecord
     # - - - </> [PLACE] <=> [PHOTO] </> - - - #
     has_many :photos
 
+    # - - - </> [PLACE] <=> [LOCATION] </> - - - #
+    has_one :place_location
+
 end

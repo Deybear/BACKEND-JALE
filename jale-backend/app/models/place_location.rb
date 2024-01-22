@@ -6,7 +6,7 @@ class PlaceLocation < ApplicationRecord
     # - - - </> [LON] </> - - - #
     validates :place_lon, presence: true
 
-    # - - - </> [EVENT] </> - - - #
-    has_one :place
+    # - - - </> [LINK] </> - - - #
+    belongs_to :place
 
 end

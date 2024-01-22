@@ -10,7 +10,7 @@ class Api::PlacesController < ApplicationController
 
   # GET /places/1
   def show
-    render json: @place.as_json(include: :photos)
+    render json: @place.as_json(include: [:photos, :place_location])
   end
 
   # POST /places
@@ -47,6 +47,6 @@ class Api::PlacesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def place_params
-      params.require(:place).permit(:place_name, :place_desc, :place_cost, :place_email, :place_score, :place_phone, :place_website, :place_address, :place_time_open, :place_time_close, photos: [])
+      params.require(:place).permit(:place_name, :place_desc, :place_cost, :place_email, :place_score, :place_phone, :place_website, :place_address, :place_time_open, :place_time_close, photos: [], place_location:)
     end
 end
