@@ -83,7 +83,7 @@
 # event_address: "Province of Puntarenas, Paquera", event_date_start: "2024-01-26", event_time_start: "13:00")
 
 # - - - </> [REVIEW] </> - - - #
-# Review.create!(review_title: "I loved this place! :3", review_desc: "Totally recommended to enjoy the wonders of sea life", review_score: 3, review_display: true)
+# Review.create!(review_title: "I loved this place! :3", review_desc: "Totally recommended to enjoy the wonders of sea life", review_score: 3, user_id: 1, place_id: 1)
 
 # - - - </> [TOUR] </> - - - #
 # UserTour.create!(user_id: 1, place_id: 1)
