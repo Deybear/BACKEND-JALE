@@ -19,7 +19,13 @@ Rails.application.routes.draw do
     resources :photos
 
     # - - - </> [ROUTE] </> - - - #
+    resources :reviews
+
+    # - - - </> [ROUTE] </> - - - #
     resources :categories
+
+    # - - - </> [ROUTE] </> - - - #
+    resources :user_tours
 
     # - - - </> [ROUTE] </> - - - #
     resources :place_locations
@@ -32,7 +38,7 @@ Rails.application.routes.draw do
 
     # - - - </> [ROUTE] </> - - - #
     resources :event_categories
-    
+
   end
 
   # - - - </> [AUTH] </> - - - #

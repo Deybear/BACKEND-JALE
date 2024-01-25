@@ -12,7 +12,7 @@ class Api::UsersController < ApplicationController
 
   # GET /users/1
   def show
-    render json: @user
+    render json: @user.as_json(include: [:places])
   end
 
   # POST /users
@@ -49,7 +49,7 @@ class Api::UsersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def user_params
-      params.permit(:user_name, :user_lastname, :user_email, :password, :user_birthdate)
+      params.permit(:user_name, :user_lastname, :user_email, :password, :user_birthdate, places: [])
       # params.require(:user).permit(:user_name, :user_lastname, :user_email, :password, :user_birthdate)
     end
 

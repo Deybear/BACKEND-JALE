@@ -19,6 +19,11 @@ class Review < ApplicationRecord
     # - - - </> [REVIEW] <=> [PLACES] </> - - - #
     has_many :place_reviews, dependent: :destroy
     has_many :places, through: :place_reviews
+    
+    # - - - </> [METHOD] </> - - - #
+    def self.find_user_places
+        self.all.as_json(include: {place_reviews: {include: {user: {only: [:id, :user_name]}, place: {only: [:id, :place_name]}}}})
+    end
 
     private
 

@@ -14,6 +14,7 @@
 
 # - - - </> [USER] </> - - - #
 # User.create!(user_name: "Deynor", user_lastname: "Rodriguez", user_email: "drodriguezr@fwdcostarica.com", password: "Deynor12345", user_birthdate: "1999-10-05", user_type_id: 1)
+# User.create!(user_name: "Wayner", user_lastname: "Wilson", user_email: "wgonzalezw@fwdcostarica.com", password: "Wayner12345", user_birthdate: "1998-04-29", user_type_id: 1)
 
 # - - - </> [CATEGORY] </> - - - #
 # Category.create!(category_desc: "+18")
@@ -83,7 +84,8 @@
 # event_address: "Province of Puntarenas, Paquera", event_date_start: "2024-01-26", event_time_start: "13:00")
 
 # - - - </> [REVIEW] </> - - - #
-# Review.create!(review_title: "I loved this place! :3", review_desc: "Totally recommended to enjoy the wonders of sea life", review_score: 3, user_id: 1, place_id: 1)
+# Review.create!(review_title: "I loved this place! :3", review_desc: "Totally recommended to enjoy the wonders of sea life", review_score: 3)
+# PlaceReview.create!(user_id: 1, place_id: 1, review_id: 1)
 
 # - - - </> [TOUR] </> - - - #
 # UserTour.create!(user_id: 1, place_id: 1)
@@ -94,7 +96,6 @@
 # PlaceCategory.create!(place_id: 1, category_id: 10)
 # PlaceCategory.create!(place_id: 1, category_id: 13)
 # PlaceCategory.create!(place_id: 1, category_id: 15)
-# PlaceCategory.create!(place_id: 1, category_id: 17)
 # PlaceCategory.create!(place_id: 1, category_id: 24)
 # PlaceCategory.create!(place_id: 1, category_id: 25)
 
@@ -114,6 +115,14 @@
 # PlaceCategory.create!(place_id: 3, category_id: 17)
 # PlaceCategory.create!(place_id: 3, category_id: 23)
 
+# PlaceCategory.create!(place_id: 4, category_id: 5)
+# PlaceCategory.create!(place_id: 4, category_id: 9)
+# PlaceCategory.create!(place_id: 4, category_id: 10)
+# PlaceCategory.create!(place_id: 4, category_id: 14)
+# PlaceCategory.create!(place_id: 4, category_id: 17)
+# PlaceCategory.create!(place_id: 4, category_id: 20)
+# PlaceCategory.create!(place_id: 4, category_id: 23)
+
 # PlaceCategory.create!(place_id: 5, category_id: 5)
 # PlaceCategory.create!(place_id: 5, category_id: 9)
 # PlaceCategory.create!(place_id: 5, category_id: 10)
@@ -122,5 +131,34 @@
 # PlaceCategory.create!(place_id: 5, category_id: 20)
 # PlaceCategory.create!(place_id: 5, category_id: 23)
 
-# - - - </> [PHOTO] </> - - - #
-# PlaceLocation.create!(place_lat: "9.978107257386181", place_lon: "-84.82534270907112", place_id: 1)
+# - - - </> [CATEGORY] </> - - - #
+# EventCategory.create!(event_id: 1, category_id: 3)
+# EventCategory.create!(event_id: 1, category_id: 25)
+
+# EventCategory.create!(event_id: 2, category_id: 3)
+# EventCategory.create!(event_id: 2, category_id: 5)
+# EventCategory.create!(event_id: 2, category_id: 6)
+# EventCategory.create!(event_id: 2, category_id: 8)
+# EventCategory.create!(event_id: 2, category_id: 16)
+# EventCategory.create!(event_id: 2, category_id: 17)
+# EventCategory.create!(event_id: 2, category_id: 25)
+
+# EventCategory.create!(event_id: 3, category_id: 3)
+# EventCategory.create!(event_id: 3, category_id: 5)
+# EventCategory.create!(event_id: 3, category_id: 6)
+# EventCategory.create!(event_id: 3, category_id: 8)
+# EventCategory.create!(event_id: 3, category_id: 16)
+# EventCategory.create!(event_id: 3, category_id: 17)
+# EventCategory.create!(event_id: 3, category_id: 25)
+
+# - - - </> [LOCATION] </> - - - #
+# PlaceLocation.create!(place_lat: "9.977114", place_lon: "-84.826716", place_id: 1)
+# PlaceLocation.create!(place_lat: "9.7898319", place_lon: "-84.9247333", place_id: 2)
+# PlaceLocation.create!(place_lat: "9.768272", place_lon: "-84.9122146", place_id: 3)
+# PlaceLocation.create!(place_lat: "10.0484938", place_lon: "-84.8054945", place_id: 4)
+# PlaceLocation.create!(place_lat: "10.2989417", place_lon: "-84.7681559", place_id: 5)
+
+# - - - </> [LOCATION] </> - - - #
+# EventLocation.create!(event_lat: "9.9900623", event_lon: "-84.6667152", event_id: 1)
+# EventLocation.create!(event_lat: "9.9322676", event_lon: "-85.0491949", event_id: 2)
+# EventLocation.create!(event_lat: "9.8180048", event_lon: "-84.9544433", event_id: 3)

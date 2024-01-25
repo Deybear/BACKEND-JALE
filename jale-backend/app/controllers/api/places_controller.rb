@@ -5,7 +5,7 @@ class Api::PlacesController < ApplicationController
   def index
     @places = Place.all
 
-    render json: @places
+    render json: @places.as_json(include: [:photos])
   end
 
   # GET /places/1
