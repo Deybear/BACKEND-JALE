@@ -26,6 +26,12 @@ Rails.application.routes.draw do
 
     # - - - </> [ROUTE] </> - - - #
     resources :event_locations
+
+    # - - - </> [ROUTE] </> - - - #
+    resources :place_categories
+
+    # - - - </> [ROUTE] </> - - - #
+    resources :event_categories
     
   end
 
