@@ -7,20 +7,22 @@ class Place < ApplicationRecord
     validates :place_desc, presence: true
 
     # - - - </> [COST] </> - - - #
-    validates :place_cost, presence: true
+    validates :place_cost, presence: true, numericality: { only_integer: true }
 
     # - - - </> [EMAIL] </> - - - #
-    validates :place_email, presence: true
+    validates :place_email, presence: true, uniqueness: true
+    validates :place_email, format: { with: URI::MailTo::EMAIL_REGEXP }
 
     # - - - </> [SCORE] </> - - - #
-    validates :place_score, presence: true
+    validates :place_score, presence: true, numericality: { only_integer: true, greater_than_or_equal_to: 1, less_than_or_equal_to: 5 }
 
     # - - - </> [PHONE] </> - - - #
-    validates :place_phone, presence: true
+    validates :place_phone, presence: true, format: { with: /\A\d{4}-\d{4}\z/ }
 
     # - - - </> [WEBSITE] </> - - - #
-    validates :place_website, presence: true
-
+    URL_REGEX = /\A(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?\z/ix
+    validates :place_website, presence: true, format: { with: URL_REGEX }
+    
     # - - - </> [ADDRESS] </> - - - #
     validates :place_address, presence: true
 
