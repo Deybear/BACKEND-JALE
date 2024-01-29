@@ -10,7 +10,7 @@ class Api::PlacesController < ApplicationController
     else
       @places = Place.all
     end
-    render json: @places
+    render json: @places.as_json(include: [:photos])
   end
 
   # GET /places/1
