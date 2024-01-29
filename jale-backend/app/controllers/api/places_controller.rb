@@ -3,9 +3,14 @@ class Api::PlacesController < ApplicationController
 
   # GET /places
   def index
-    @places = Place.all
-
-    render json: @places.as_json(include: [:photos])
+    if params[:category_id].present?
+      @places = Place.includes(:place_categories)
+      .where("place_categories.category_id = #{params[:category_id]}")
+      .references(:place_categories)
+    else
+      @places = Place.all
+    end
+    render json: @places
   end
 
   # GET /places/1

@@ -28,6 +28,9 @@ Rails.application.routes.draw do
     resources :user_tours
 
     # - - - </> [ROUTE] </> - - - #
+    delete '/delete_tour', to: 'user_tours#delete_tour'
+
+    # - - - </> [ROUTE] </> - - - #
     resources :place_locations
 
     # - - - </> [ROUTE] </> - - - #

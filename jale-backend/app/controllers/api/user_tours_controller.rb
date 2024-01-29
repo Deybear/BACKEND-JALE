@@ -39,6 +39,26 @@ class Api::UserToursController < ApplicationController
         @user_tour.destroy!
     end
 
+    # DELETE /delete_tour/:user_id/:place_id
+    def delete_tour
+        
+        @user_id = params[:user_id]
+        @place_id = params[:place_id]
+
+        if @user_id.present? && @place_id.present?
+            @registered_tour = UserTour.find_by(user_id: @user_id, place_id: @place_id)
+
+            if @registered_tour
+                @registered_tour.destroy!
+                render json: { message: "Relation deleted successfully" }, status: :ok
+            else
+                render json: { error: "Relation doesn't exist!" }, status: :not_found
+            end
+        else
+            render json: { error: "Params doesn't exist!" }, status: :not_found
+        end
+    end
+
     private
     # Use callbacks to share common setup or constraints between actions.
     def set_user_tour

@@ -14,7 +14,7 @@
 
 # - - - </> [USER] </> - - - #
 # User.create!(user_name: "Deynor", user_lastname: "Rodriguez", user_email: "drodriguezr@fwdcostarica.com", password: "Deynor12345", user_birthdate: "1999-10-05", user_type_id: 1)
-# User.create!(user_name: "Wayner", user_lastname: "Wilson", user_email: "wgonzalezw@fwdcostarica.com", password: "Wayner12345", user_birthdate: "1998-04-29", user_type_id: 1)
+# User.create!(user_name: "Wayner", user_lastname: "Wilson", user_email: "wgonzalezw@fwdcostarica.com", password: "Wayner12345", user_birthdate: "1998-04-29")
 
 # - - - </> [CATEGORY] </> - - - #
 # Category.create!(category_desc: "+18")
@@ -83,8 +83,18 @@
 # Photo.create!(photo_url: "https://shorturl.at/DNT15", place_id: 3)
 # Photo.create!(photo_url: "https://shorturl.at/glvZ9", place_id: 3)
 
+# Photo.create!(photo_url: "https://shorturl.at/fhFZ5", place_id: 4)
+# Photo.create!(photo_url: "https://shorturl.at/rUWY9", place_id: 4)
+# Photo.create!(photo_url: "https://shorturl.at/hkEJS", place_id: 4)
+# Photo.create!(photo_url: "https://shorturl.at/ahY04", place_id: 4)
+
+# Photo.create!(photo_url: "https://shorturl.at/gpW03", place_id: 5)
+# Photo.create!(photo_url: "https://shorturl.at/cot09", place_id: 5)
+# Photo.create!(photo_url: "https://shorturl.at/inpDJ", place_id: 5)
+# Photo.create!(photo_url: "https://shorturl.at/kzJY8", place_id: 5)
+
 # - - - </> [EVENT] </> - - - #
-# Event.create!(event_name: "IV Exhibition of Classic and Sports Cars", event_desc: "If you are a vehicle lover, whether in classic or sports versions, you cannot miss this activity. The Municipality of Esparza invites you to enjoy the IV Classic and Sports Car Exhibition, an event full of adrenaline, entertainment and engines",
+# Event.create!(event_name: "IV Exhibition of Cars", event_desc: "If you are a vehicle lover, whether in classic or sports versions, you cannot miss this activity. The Municipality of Esparza invites you to enjoy the IV Classic and Sports Car Exhibition, an event full of adrenaline, entertainment and engines",
 # event_cost: 0, event_email: "info@muniesparza.go.cr", event_photo: "https://shorturl.at/ktDGZ", event_phone: "2636-0100", event_website: "http://muniesparza.go.cr/",
 # event_address: "Province of Puntarenas, Esparza", event_date_start: "2024-01-14", event_time_start: "12:00")
 
